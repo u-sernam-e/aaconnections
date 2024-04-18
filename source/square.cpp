@@ -50,6 +50,8 @@ void Square::draw()
     m_sqrAnim.draw({displayPos().x, displayPos().y, size().x, size().y}, m_selectedWithMouse);
 
     DrawRectangleRoundedLines({displayPos().x, displayPos().y, size().x, size().y}, 0.5, 5, 5, WHITE);
+
+    int txtSize{16};
     
-    DrawTextEx(iData->bd.fs.get("res/Roboto-Regular.ttf", 20), iData->sqrs.squares[m_id].getWord().c_str(), displayPos() + size()/2 - MeasureTextEx(iData->bd.fs.get("res/Roboto-Regular.ttf", 20), iData->sqrs.squares[m_id].getWord().c_str(), 20, 2)/2, 20, 2, (m_selected ? BLACK : WHITE));
+    DrawTextEx(iData->bd.fs.get("res/Roboto-Regular.ttf", txtSize), iData->sqrs.squares[m_id].getWord().c_str(), displayPos() + size()/2 - MeasureTextEx(iData->bd.fs.get("res/Roboto-Regular.ttf", txtSize), iData->sqrs.squares[m_id].getWord().c_str(), txtSize, 2)/2, txtSize, 2, (m_selected ? BLACK : WHITE));
 }

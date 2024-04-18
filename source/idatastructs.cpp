@@ -5,43 +5,43 @@ std::string SquareIData::getWord()
     switch (id)
     {
         case 0:
-            return "Bonfire";
+            return "Mrs. Kress";
         case 1:
-            return "Glow";
+            return "Mr. Dineen";
         case 2:
-            return "Halloween";
+            return "Mr. Decker";
         case 3:
-            return "Snowball";
+            return "Mr. Levey";
 
         case 4:
-            return "Pep\n\nRally";
+            return "Biology";
         case 5:
-            return "Bumpa\n\nPalooza";
+            return "US History";
         case 6:
-            return "Team\n\nTrivia";
+            return "Government";
         case 7:
-            return "Food\n\nDrive";
+            return "English\n\nLanguage";
 
         case 8:
-            return "Turner";
+            return "Digital\n\nMedia";
         case 9:
-            return "Decker";
+            return "Photography";
         case 10:
-            return "Donlon";
+            return "Animation";
         case 11:
-            return "Cook";
+            return "Coding";
 
         case 12:
-            return "Dineen";
+            return "Art";
         case 13:
-            return "Kress";
+            return "Music";
         case 14:
-            return "Bensley";
+            return "Business";
         case 15:
-            return "Carretto";
+            return "Technology";
 
         default:
-            return "-=!ERROR!=-";
+            return "ERROR WORD";
     }
 }
 
@@ -50,13 +50,13 @@ std::string groupName(int group)
     switch (group)
     {
         case 0:
-            return "Dances";
+            return "7th Grade Teachers";
         case 1:
-            return "Student Government Events";
+            return "AP Classes";
         case 2:
-            return "Teachers Who Coach";
+            return "Taught By Ms. Postilli";
         case 3:
-            return "Grades 9-12 Class Advisors";
+            return "Elective Subjects";
         
         default:
             return "ERROR GROUP NAME";

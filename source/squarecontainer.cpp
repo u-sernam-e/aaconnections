@@ -29,6 +29,7 @@ void SquareContainer::init(InteractionData* idata)
 
     std::vector<int> poop{0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15}; // poop
     std::shuffle(poop.begin(), poop.end(), shuffleMaker); // then shuffle
+    std::shuffle(poop.begin(), poop.end(), shuffleMaker); // twice
 
     for (int i{}; i < m_squares.size(); ++i)
     {

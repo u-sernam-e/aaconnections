@@ -18,8 +18,9 @@ void ButtonController::update()
 
 void ButtonController::draw()
 {
-    float xPosA{getScreenCenter().x - MeasureTextEx(iData->bd.fs.get("res/Roboto-Bold.ttf", 60), "The AAConnections", 60, 2).x/2}; // I guess this can be there
-    DrawTextEx(iData->bd.fs.get("res/Roboto-Bold.ttf", 60), "The AAConnections", {xPosA, 20}, 60, 2, WHITE);
+    int txtSize{43};
+    float xPosA{getScreenCenter().x - MeasureTextEx(iData->bd.fs.get("res/Roboto-Bold.ttf", txtSize), "The AAConnections Vol. 2", txtSize, 2).x/2}; // I guess this can be there
+    DrawTextEx(iData->bd.fs.get("res/Roboto-Bold.ttf", txtSize), "The AAConnections Vol. 2", {xPosA, 35}, txtSize, 2, WHITE);
 
     const char* text{TextFormat("Wrong Guesses: %i", iData->gCond.wrongGuesses)};
     float xPosB{getScreenCenter().x - MeasureTextEx(iData->bd.fs.get("res/Roboto-Regular.ttf", 25), text, 25, 2).x/2};
